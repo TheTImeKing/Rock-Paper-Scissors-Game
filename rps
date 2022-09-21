@@ -1,5 +1,9 @@
-human_turn = 'rock'
-computer_turn = 'scissors'
+import random
+turn = ['rock','papper','scissors']
+
+human_turn = input()
+computer_turn = random.choice(turn)
+print(computer_turn)
 
 if human_turn == computer_turn:
     print('Draw!')
@@ -9,5 +13,7 @@ elif human_turn == 'paper' and computer_turn == 'rock':
     print('Human wins!')
 elif human_turn == 'scissors' and computer_turn == 'paper':
     print('Human wins!')
-else:
+elif (human_turn == human_turn):
     print('Computer wins!')
+else:
+  print('incorrect input!')
