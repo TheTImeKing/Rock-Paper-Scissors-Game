@@ -13,7 +13,5 @@ elif human_turn == 'paper' and computer_turn == 'rock':
     print('Human wins!')
 elif human_turn == 'scissors' and computer_turn == 'paper':
     print('Human wins!')
-elif (human_turn == human_turn):
-    print('Computer wins!')
 else:
-  print('incorrect input!')
+    print('Computer wins!')
