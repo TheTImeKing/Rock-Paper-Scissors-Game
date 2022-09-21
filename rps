@@ -1,7 +1,7 @@
 import random
 turn = ['rock','papper','scissors']
 
-human_turn = input()
+human_turn = input('Enter your turn! \n')
 computer_turn = random.choice(turn)
 print(computer_turn)
 
