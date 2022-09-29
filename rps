@@ -26,3 +26,51 @@ while True:
             break
         else:
             print("Unknown!")
+
+
+
+
+
+
+import random
+actions = ['rock', 'paper', 'scissors']
+player = []
+cpu = []
+win_log = []
+
+while(True):
+    actionss = ['rock', 'paper', 'scissors']
+    player_a = input('          Enter your turn! \n     Type exit to stop playing! \n               ')
+    cpu_a = random.choice(actions)
+
+    player.append(player_a)
+    cpu.append(cpu_a)
+    
+    if player_a == 'exit':
+                break
+            
+    print('\n'f'player:{player_a} vs. computer: {cpu_a}')
+    if player_a == cpu_a:
+        print('Draw!')
+        win_log.append('Draw')
+    elif player_a == 'rock' and cpu_a == 'scissors':
+        print('player wins!')
+        win_log.append('player wins!')
+    elif player_a == 'paper' and cpu_a == 'rock':
+        print('player wins!')
+        win_log.append('player wins!')
+    elif player_a == 'scissors' and cpu_a == 'paper':
+        print('player wins!')
+        win_log.append('player wins!')
+    elif player_a not in actionss:
+        print('Unknown action!')
+        win_log.append('Unknows action!')
+    else:
+        print('cpu wins!')
+        win_log.append('cpu wins!')
+       
+    print('Game log:')
+    print(f'You have played {len(player)} times.')
+    print(player)
+    print(cpu)
+    print(win_log)
